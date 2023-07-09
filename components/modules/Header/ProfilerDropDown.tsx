@@ -1,17 +1,17 @@
 import ProfileSvg from '@/components/elements/ProfileSvg/ProfileSvg'
-import { IWrapperComponentProps } from '@/types/common'
+import { IWrappedComponentProps } from '@/types/common'
 import { forwardRef } from 'react'
 import { $mode } from '@/context/mode'
 import { useStore } from 'effector-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import LogoutSvg from '@/components/elements/LogoutSvg/LogoutSvg'
 import { withClickOutside } from '@/utils/withClickOutside'
-import styles from '@/styles/ProfileDropDown/index.module.scss'
+import styles from '@/styles/profileDropDown/index.module.scss'
 import { $user } from '@/context/user'
 import { logoutFx } from '@/app/api/auth'
 import { useRouter } from 'next/router'
 
-const ProfileDropDown = forwardRef<HTMLDivElement, IWrapperComponentProps>(
+const ProfileDropDown = forwardRef<HTMLDivElement, IWrappedComponentProps>(
   ({ open, setOpen }, ref) => {
     const mode = useStore($mode)
     const user = useStore($user)
