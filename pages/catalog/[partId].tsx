@@ -27,6 +27,7 @@ export default function CatalogPartPage({ query }: { query: IQueryParams }) {
 
   useEffect(() => {
     loadBoilerPart()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.asPath])
 
   useEffect(() => {

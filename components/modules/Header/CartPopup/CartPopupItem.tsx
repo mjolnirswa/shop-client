@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { $mode } from '@/context/mode'
 import { IShoppingCartItem } from '@/types/shopping-cart'
 import { useStore } from 'effector-react'

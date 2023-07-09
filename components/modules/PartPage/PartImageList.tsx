@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useStore } from 'effector-react'
 import styles from '@/styles/part/index.module.scss'
 import { $boilerPart } from '@/context/boilerPart'

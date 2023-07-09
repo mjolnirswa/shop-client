@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Slider from 'react-slick'
 import { useStore } from 'effector-react'
 import 'slick-carousel/slick/slick.css'
@@ -18,7 +19,6 @@ const DashboardSlider = ({
 }: IDashboardSlider) => {
   const isMedia768 = useMediaQuery(768)
   const isMedia1366 = useMediaQuery(1366)
-  const isMedia1030 = useMediaQuery(1030)
   const isMedia800 = useMediaQuery(800)
   const isMedia560 = useMediaQuery(560)
   const mode = useStore($mode)

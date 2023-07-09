@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from '@/styles/part/index.module.scss'
 import { IPartImagesItemProps } from '@/types/part'
 

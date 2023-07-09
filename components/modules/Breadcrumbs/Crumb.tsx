@@ -18,6 +18,7 @@ const Crumb = ({
 
   useEffect(() => {
     handleTextGenerate()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [textGenerator])
 
   const handleTextGenerate = async () => {

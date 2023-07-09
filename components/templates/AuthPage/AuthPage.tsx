@@ -9,13 +9,13 @@ import { useStore } from 'effector-react'
 
 const AuthPage = () => {
   const isMedia800 = useMediaQuery(800)
-  let switchCtn = useRef() as MutableRefObject<HTMLDivElement>
-  let switchC1 = useRef() as MutableRefObject<HTMLDivElement>
-  let switchC2 = useRef() as MutableRefObject<HTMLDivElement>
-  let switchCircle1 = useRef() as MutableRefObject<HTMLDivElement>
-  let switchCircle2 = useRef() as MutableRefObject<HTMLDivElement>
-  let aContainer = useRef() as MutableRefObject<HTMLDivElement>
-  let bContainer = useRef() as MutableRefObject<HTMLDivElement>
+  const switchCtn = useRef() as MutableRefObject<HTMLDivElement>
+  const switchC1 = useRef() as MutableRefObject<HTMLDivElement>
+  const switchC2 = useRef() as MutableRefObject<HTMLDivElement>
+  const switchCircle1 = useRef() as MutableRefObject<HTMLDivElement>
+  const switchCircle2 = useRef() as MutableRefObject<HTMLDivElement>
+  const aContainer = useRef() as MutableRefObject<HTMLDivElement>
+  const bContainer = useRef() as MutableRefObject<HTMLDivElement>
 
   const mode = useStore($mode)
   const darkModeClass = mode === 'dark' ? `${styles.dark_mode}` : ''

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from '@/styles/part/index.module.scss'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
 import Slider from 'react-slick'

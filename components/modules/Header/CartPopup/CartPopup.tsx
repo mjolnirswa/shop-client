@@ -1,4 +1,4 @@
-import { IWrapperComponentProps } from '@/types/common'
+import { IWrappedComponentProps } from '@/types/common'
 import { forwardRef, useEffect } from 'react'
 import { $mode } from '@/context/mode'
 import { useStore } from 'effector-react'
@@ -20,7 +20,7 @@ import { getCartItemsFx } from '@/app/api/shoppingCart'
 import { formatPrice } from '@/utils/common'
 import styles from '@/styles/cartPopup/index.module.scss'
 
-const CartPopup = forwardRef<HTMLDivElement, IWrapperComponentProps>(
+const CartPopup = forwardRef<HTMLDivElement, IWrappedComponentProps>(
   ({ open, setOpen }, ref) => {
     const mode = useStore($mode)
     const user = useStore($user)
@@ -33,6 +33,7 @@ const CartPopup = forwardRef<HTMLDivElement, IWrapperComponentProps>(
 
     useEffect(() => {
       loadCartItems()
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     useEffect(() => {

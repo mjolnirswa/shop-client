@@ -4,6 +4,7 @@ import BrandSliderArrowSvg from '../BrandSliderArrow/BrandSliderArrow'
 
 const BrandSliderPrevArrow = (props: IBrandsSliderArrow) => (
   <button
+    // eslint-disable-next-line max-len
     className={`${styles.dashboard__brands__slider__arrow} ${styles.dashboard__brands__slider__arrow_prev} ${props.modeClass}`}
     onClick={props.onClick}
   >

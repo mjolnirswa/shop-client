@@ -66,6 +66,7 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
 
   useEffect(() => {
     loadBoilerParts()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filteredBoilerParts, isFilterInQuery])
 
   const loadBoilerParts = async () => {
