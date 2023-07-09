@@ -1,4 +1,4 @@
-import { IWrapperComponentProps } from '@/types/common'
+import { IWrappedComponentProps } from '@/types/common'
 import {
   ForwardRefExoticComponent,
   MutableRefObject,
@@ -10,7 +10,7 @@ import {
 
 export function withClickOutside(
   WrappedComponent: ForwardRefExoticComponent<
-    IWrapperComponentProps & RefAttributes<HTMLDivElement>
+    IWrappedComponentProps & RefAttributes<HTMLDivElement>
   >
 ) {
   const Component = () => {
