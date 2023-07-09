@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Slider from 'react-slick'
 import { useStore } from 'effector-react'
 import 'slick-carousel/slick/slick.css'
@@ -6,7 +7,6 @@ import { $mode } from '@/context/mode'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { useEffect } from 'react'
 import styles from '@/styles/dashboard/index.module.scss'
-import BrandSliderArrow from '@/components/elements/BrandSliderNextArrow/BrandSliderNextArrow'
 import BrandSliderNextArrow from '@/components/elements/BrandSliderNextArrow/BrandSliderNextArrow'
 import BrandSliderPrevArrow from '@/components/elements/BrandSliderArrowPrev/BrandSliderArrowPrev'
 
